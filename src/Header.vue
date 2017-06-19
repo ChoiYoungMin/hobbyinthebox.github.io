@@ -4,17 +4,16 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <div class="row">
-                    <div class="large-12 columns">
-                        <div  class="col-md-4">
+                        <div  class="col-xs-4">
                             <ul class="nav navbar-nav">
                                 <li class="hidden">
                                     <a href="#page-top"></a>
                                 </li>
                                 <li>
-                                    <a href="#services">About</a>
+                                    <router-link to = "/about"> About</router-link>
                                 </li>
                                 <li>
-                                    <a href="#portfolio">여기는 뭐하지?</a>
+                                    <a href="#portfolio">이벤트</a>
                                 </li>
                                 <li>
                                     <a href="#about">문의하기</a>
@@ -22,26 +21,34 @@
                             </ul>
                         </div>
 
-                        <div  class="col-md-4 logo"> 
-                            <ul class="nav navbar-nav">
-                                <li>
-                                    <img src="http://hobbyinthebox.co.kr/web/upload/masterskin/hib_logo.svg" width="250px" height="50px"/>
-                                </li>
-                            </ul>
+                        <div  class="col-xs-4 logo"> 
+                            <router-link to = "/">
+                                <ul class="nav navbar-nav">
+                                    <li>  
+                                            <img src="http://hobbyinthebox.co.kr/web/upload/masterskin/hib_logo.svg"/>
+                                    </li>
+                                </ul>
+                            </router-link>
                         </div>
 
-                        <div  class="col-md-4">
+                        <div  class="col-xs-4 right">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a class="rightM" href="#services"><span>취미 시작하기</span></a>
+                                    <router-link to = "/hobbystart" class="rightM"><span>취미 시작하기</span></router-link>
+                                    
                                 </li>
+
                                 <li>
-                                    <a class="rightM2"  href="#services"><span>로그인</span></a>
+                                    <router-link to = "/login" class="rightM2"><span>로그인</span></router-link>
+                                </li>
+
+                                <li>
+
+                                    <router-link to = "/mypage" class="rightM2"><span>마이페이지</span></router-link>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </div>
             </div>
 
             <!-- /.navbar-collapse -->
@@ -57,43 +64,9 @@
 
 <style scoped>
 
-
-@media screen and (max-width: 400px) {
-  .rightM {
-        border: 1px solid yellowgreen;
-        border-radius: 30px;
-        margin-left: 20px;
-
-        margin-right: 20px;
-    }
-
-    .rightM2 span {
-
-        font-family: "KoPubDotumBold";
-        color: blue;
-    }
-
-
-    .rightM span {
-        font-family: "KoPubDotumMedium";
-        color: black;
-    }
- 
-}
-
-@media screen and (min-width: 401px) and (max-width: 500px) {
-    
-    
-}
-
-@media screen and (min-width: 801px) {
-
     .rightM {
         border: 1px solid yellowgreen;
         border-radius: 30px;
-        margin-left: 20px;
-
-        margin-right: 20px;
     }
 
     .rightM2 span {
@@ -108,6 +81,35 @@
         color: black;
     }
 
-}
+
+    img {
+
+        width : 100%;
+        height : 50px;
+        margin: 0 auto;
+    }
+
+
+    .rightM {
+        margin-left: 50px;
+    }
+
+
+
+    .col-xs-4.right {
+        margin: 0 auto;
+        text-align:  center;
+    }
+
+    @media screen and (max-width: 800px) {
+        .col-xs-4 {
+            display:none;
+        }
+
+        .col-xs-4.logo {
+            display: inherit;
+            margin-left: 10%;
+        }
+    }
 
 </style>

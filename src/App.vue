@@ -1,8 +1,13 @@
 <template>
   <div id="app">
     <Header></Header>
-    <Content></Content> 
-    <!-- <About></About> -->
+    <router-view></router-view>
+    <!-- <MyPage></MyPage> -->
+    <!-- <SignUp></SignUp> -->
+    <!-- <Login></Login>  -->
+    <!-- <Content></Content> -->
+    <!--  <About></About> -->
+    <!-- <HobbyStartInfo></HobbyStartInfo> -->
   </div>
 </template>
 

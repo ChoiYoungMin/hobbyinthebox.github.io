@@ -1,113 +1,9 @@
 
-
-
-@media screen and (min-width: 300px) and (max-width: 999px) {
- 
- .navbar-header.page-scroll .row .large-12.columns .col-md-4 {
-        display: none;
+    .container {
+    width: 1200px;
+    max-width: none !important;
+            margin: 0 auto;
     }
-
-    .navbar-header.page-scroll .row .large-12.columns .col-md-4.logo{
-        display: block;
-    }
-
-   @font-face {
-        font-family: 'KoPubDotumBold'; 
-        src: url(../fonts/KoPubDotumBold.ttf) format('truetype');
-    }
-
-    @font-face {
-        font-family: 'KoPubDotumLight'; 
-        src: url(../fonts/KoPubDotumLight.ttf) format('truetype');
-    }
-  
-    @font-face {
-        font-family: 'KoPubDotumMedium'; 
-        src: url(../fonts/KoPubDotumMedium.ttf) format('truetype');
-
-    }
-
-    html {
-        width: 100%;
-        height: 100%;
-    }
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-        font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        height: 100%;
-
-    }
-
-    .navbar>.container .navbar-brand {
-
-        display: inline;
-        width: 100%;
-        text-align: center;
-    
-    }
-
-    .navbar-header.page-scroll {
-        width: 100%;
-    }
-
-    .row {
-        margin: auto;
-    }     
- 
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1199px) {
-    
-    html {
-        width: 100%;
-        height: 100%;
-    }
-
-      @font-face {
-        font-family: 'KoPubDotumBold'; 
-        src: url(../fonts/KoPubDotumBold.ttf) format('truetype');
-    }
-
-    @font-face {
-        font-family: 'KoPubDotumLight'; 
-        src: url(../fonts/KoPubDotumLight.ttf) format('truetype');
-    }
-  
-    @font-face {
-        font-family: 'KoPubDotumMedium'; 
-        src: url(../fonts/KoPubDotumMedium.ttf) format('truetype');
-
-    }
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-        font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        height: 100%;
-
-    }
-
-    .navbar>.container .navbar-brand {
-
-        display: inline;
-        width: 100%;
-        text-align: center;
-    
-    }
-
-    .navbar-header.page-scroll {
-        width: 100%;
-    }
-
-    .row {
-        margin: auto;
-    }     
-    
-}
-
-@media screen and (min-width: 1200px) {
 
     @font-face {
         font-family: 'KoPubDotumBold'; 
@@ -125,9 +21,12 @@
 
     }
 
+
     body {
+        overflow:auto; 
+
+        margin: 0 auto;
         width: 100%;
-        overflow-x: hidden;
         font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
         height: 100%;
 
@@ -135,18 +34,17 @@
 
     .navbar>.container .navbar-brand {
 
-        display: inline;
-        width: 100%;
+        width: 1200px;
         text-align: center;
     
     }
 
     .navbar-header.page-scroll {
-        width: 100%;
+        width: 1200px;
     }
 
     .row {
         margin: auto;
     }      
-  
-}
+
+ 
