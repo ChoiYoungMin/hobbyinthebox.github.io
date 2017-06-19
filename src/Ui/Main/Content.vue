@@ -131,7 +131,7 @@
 
   .top {
     height: 1100px;
-    background-image:url(../../assets/img/main.jpg);
+    background-image:url("http://imgur.com/a/R7DDL");
     background-repeat:no-repeat;
     background-attachment:scroll;
     background-position:center center;
@@ -168,7 +168,7 @@
     width: 100%;
     height: 650px;
     text-align: center;
-    background : url("../../assets/img/main2.jpg");
+    background : url("http://imgur.com/a/6KSGo");
     background-size:  100% 650px;
   }
 
